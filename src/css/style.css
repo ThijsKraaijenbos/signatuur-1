@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: Michroma;
-    padding: 0 5vw 0 5vw;
+    padding: 0 8vw 0 8vw;
     background-color: #171520;
     color: white;
     overflow-x: hidden;
+    font-size: 1.4rem;
 }
 
 h1 {
@@ -33,6 +39,7 @@ header img {
 
 .intro {
     display: flex;
+    margin-top: 5rem;
     justify-content: space-between;
 }
 
@@ -124,8 +131,26 @@ header img {
 }
 
 .all-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
     position: absolute;
-    bottom: -100rem;
+    padding: 20rem 0;
+}
+
+.all-text-wrapper h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.text-section-headers {
+    width: 30rem;
+}
+
+.all-text-wrapper p {
+    margin-bottom: 5rem;
+    width: 40rem;
 }
 
 #circle-1 {
