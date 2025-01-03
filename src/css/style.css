@@ -131,11 +131,12 @@ header img {
 }
 
 .all-text-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     z-index: 10;
     position: absolute;
     padding: 20rem 0;
+    width: 82vw;
 }
 
 .all-text-wrapper h2 {
@@ -152,6 +153,14 @@ header img {
     margin-bottom: 5rem;
     width: 40rem;
 }
+
+.right-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
 
 #circle-1 {
     z-index: 1;

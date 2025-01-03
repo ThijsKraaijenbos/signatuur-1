@@ -1,10 +1,11 @@
 {
   "name": "signatuur-1",
+  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --outDir=docs --base=./",
     "preview": "vite preview"
   },
   "keywords": [],
