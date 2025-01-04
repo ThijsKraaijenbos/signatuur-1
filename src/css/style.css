@@ -12,7 +12,7 @@ body {
     background-color: #0A0D12;
     color: white;
     overflow-x: hidden;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 h1 {
@@ -30,11 +30,11 @@ header img {
     position: relative;
 }
 
-.blurred-circle {
+.bg-circle {
     z-index: 1;
     position: absolute;
     border-radius: 100%;
-    background-color: #172841;
+    background-color: #1d3150;
 }
 
 .intro {
@@ -123,9 +123,9 @@ header img {
     bottom: -10rem;
     z-index: 10;
     width: 30rem;
-    height: 0.7rem;
+    height: 0.5rem;
     border-radius: 100rem;
-    filter: blur(0.15rem);
+    /* filter: blur(0.06rem); */
     background: rgb(121, 60, 226);
     background: linear-gradient(90deg, rgba(121, 60, 226, 1) 0%, rgba(33, 196, 241, 1) 100%);
 }
@@ -146,12 +146,15 @@ header img {
 }
 
 .text-section-headers {
+    position: relative;
     width: 30rem;
 }
 
 .all-text-wrapper p {
+    position: relative;
     margin-bottom: 5rem;
-    width: 40rem;
+    width: 35rem;
+    z-index: 10;
 }
 
 .right-text {
@@ -163,7 +166,7 @@ header img {
 
 
 #circle-1 {
-    z-index: 1;
+    z-index: 0;
     height: 60rem;
     width: 55rem;
     left: -25rem;
@@ -172,27 +175,20 @@ header img {
 }
 
 #circle-2 {
-    z-index: 1;
+    z-index: 0;
     height: 30rem;
-    width: 15rem;
-    right: 0rem;
-    top: -10rem;
+    width: 20rem;
+    right: 10rem;
+    top: 0;
     filter: blur(3rem);
-    transform: rotate(-52deg);
+    transform: rotate(-34deg);
 }
 
-/* #circle-3 {
-    z-index: 1;
-    height: 60rem;
-    width: 55rem;
-    left: -25rem;
-    top: -25rem;
+.circle-text-header {
+    position: absolute;
+    z-index: -1;
+    height: 10rem;
+    width: 30rem;
+    top: -3.5rem;
+    filter: blur(4rem);
 }
-
-#circle-4 {
-    z-index: 1;
-    height: 60rem;
-    width: 55rem;
-    left: -25rem;
-    top: -25rem;
-} */
