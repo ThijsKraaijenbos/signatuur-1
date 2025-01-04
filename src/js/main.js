@@ -54,6 +54,58 @@ const init = () => {
         }
     );
 
+    //load progress bar & orb
+    // gsap.fromTo(".progress-bar", {
+    //     opacity: 0
+    // },
+    //     {
+    //         opacity: 0.1,
+    //         duration: 3,
+    //         ease: "power3.inOut",
+    //         scrollTrigger: {
+    //             trigger: ".circle-text-header",
+    //             scrub: 5,
+    //             end: "top center",
+    //             // @ts-ignore
+    //             endTrigger: ".circle-text-header",
+    //             once: true,
+    //             // markers: true,
+    //         }
+    //     }
+    // );
+
+    // gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: ".circle-text-header", // The progress-bar acts as the container
+    //         start: "top center",         // When the progress-bar's top reaches the top of the viewport
+    //         end: "bottom bottom",     // When the progress-bar's bottom reaches the bottom of the viewport           // Smooth scrubbing
+    //         // markers: true             // Enable markers for debugging (remove for production)
+    //     }
+    // })
+    //     .from(".progress-orb", {
+    //         opacity: 0,
+    //         duration: 0.2,
+    //         ease: "power3.inOut"
+    //     })
+    //     .to(".progress-orb", {
+    //         opacity: 0.3,
+    //         duration: 3,
+    //         ease: "power3.inOut",
+    //     })
+    //     .to(".progress-orb", {
+    //         ease: "power3.inOut",
+    //         scrollTrigger: {
+    //             trigger: ".progress-bar", // The progress-bar acts as the container
+    //             start: "top center",         // When the progress-bar's top reaches the top of the viewport
+    //             end: "bottom center",     // When the progress-bar's bottom reaches the bottom of the viewport
+    //             scrub: 3,              // Smooth scrubbing
+    //             pin: ".progress-orb",     // Pin the progress-orb to the viewport center
+    //             pinSpacing: false,        // Avoid extra space being added
+    //             // markers: true,
+    //         }
+    //     });
+
+
     // Load all individual animations for the circle text glow thingies
     let circleTextHeaders = document.getElementsByClassName("circle-text-header");
     for (let element of circleTextHeaders) {

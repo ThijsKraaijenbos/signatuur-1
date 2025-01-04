@@ -39,7 +39,7 @@ header img {
 
 .intro {
     display: flex;
-    margin-top: 5rem;
+    margin: 5rem 0 20rem 0;
     justify-content: space-between;
 }
 
@@ -136,7 +136,7 @@ header img {
     grid-template-columns: 1fr 1fr;
     z-index: 10;
     position: absolute;
-    padding: 20rem 0;
+    padding: 0 0 15rem 0;
     width: 82vw;
 }
 
@@ -168,6 +168,33 @@ header img {
     text-align: right;
 }
 
+.anim-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* .progress-bar {
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.1;
+    width: 0.7rem;
+    height: 96%;
+    filter: blur(0.1rem);
+    border-radius: 100rem;
+}
+
+.progress-orb {
+    left: 50%;
+    background-color: white;
+    opacity: 0.3;
+    width: 0.7rem;
+    height: 1.4rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 100;
+    filter: blur(0.06rem);
+
+} */
 
 #circle-1 {
     z-index: 0;
