@@ -20,6 +20,40 @@ const init = () => {
 
     console.log("test")
 
+    gsap.fromTo("#circle-1, #circle-2", {
+        opacity: 0.3
+    },
+        {
+            opacity: 1,
+            duration: 2,
+            ease: "power3.inOut",
+        }
+    );
+
+    gsap.fromTo(".right img", {
+        opacity: 0,
+        y: -40,
+    },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power3.inOut",
+        }
+    );
+
+    gsap.fromTo(".right .gradient-bar", {
+        opacity: 0,
+        x: 200,
+    },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: "power3.inOut",
+        }
+    );
+
     // Load all individual animations for the circle text glow thingies
     let circleTextHeaders = document.getElementsByClassName("circle-text-header");
     for (let element of circleTextHeaders) {
