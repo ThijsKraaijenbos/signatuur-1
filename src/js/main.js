@@ -89,7 +89,7 @@ const init = () => {
     //animate p tag elements
     let textTags = document.getElementsByClassName("anim-text")
     for (let element of textTags) {
-        gsap.fromTo(".onderzoeken-text", {
+        gsap.fromTo(element, {
             y: -10,
             opacity: 0,
         },
@@ -99,11 +99,12 @@ const init = () => {
                 duration: 3,
                 ease: "power3.inOut",
                 scrollTrigger: {
-                    trigger: ".onderzoeken-text",
+                    trigger: element,
                     scrub: 3,
-                    end: "top center",
-                    endTrigger: ".onderzoeken-text",
+                    end: "25% center",
+                    endTrigger: element,
                     once: true,
+                    // markers: true,
                 }
             }
         );
