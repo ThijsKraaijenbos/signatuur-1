@@ -1,11 +1,23 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import Lenis from "lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("load", () => init());
 
 const init = () => {
+
+    // Initialize Lenis
+    const lenis = new Lenis({
+        autoRaf: true,
+    });
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+        console.log(e);
+    });
+
     console.log("test")
 
     // Load all individual animations for the circle text glow thingies
