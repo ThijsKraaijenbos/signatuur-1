@@ -11,7 +11,7 @@ body {
     padding: 0 8vw 0 8vw;
     background-color: #0A0D12;
     color: white;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-size: 1.3rem;
 }
 
@@ -79,6 +79,7 @@ header img {
 }
 
 .left {
+    max-width: 40vw;
     position: relative;
     left: 3.5rem;
 }
