@@ -152,7 +152,7 @@ const init = () => {
                     // @ts-ignore
                     endTrigger: element.parentElement?.parentElement.querySelector('.anim-text'),
                     once: true,
-                    markers: true,
+                    // markers: true,
                 }
             }
         );
@@ -224,7 +224,7 @@ const init = () => {
                 end: "20% center",
                 scrub: 3,
                 once: true,
-                markers: true,
+                // markers: true,
             }
         }
     );

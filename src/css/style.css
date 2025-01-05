@@ -212,13 +212,46 @@ header img {
 .white-space {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: flex-start;
 }
 
 .book-img {
-
     width: 20rem;
     border-radius: 0.6rem;
+    margin-top: 5rem;
+}
+
+.contains-dropdowns {
+    margin-bottom: 5rem;
+    max-width: 30rem;
+}
+
+.contains-dropdowns .anim-text {
+    border: none;
+    margin-bottom: 0;
+
+}
+
+.dropdowns-wrapper {
+    border-bottom: #E0E0E0 0.1rem solid;
+}
+
+summary {
+    /* font-size: 1.3rem; */
+    font-weight: bold;
+    margin: 1.3rem 0;
+}
+
+details li {
+    border: none !important;
+    /* padding: 0 0 1.3rem 0 !important; */
+    padding: 0 !important;
+    font-size: 1.3rem;
+    margin: -0.8rem 0 2rem 0
+}
+
+ul:nth-last-child(1) {
+    margin: -0.8rem 0 -0.7rem 0 !important;
 }
 
 #circle-1 {
