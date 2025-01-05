@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 html,
 body {
@@ -7,20 +7,28 @@ body {
 }
 
 body {
-    font-family: Michroma;
+
     padding: 0 8vw 0 8vw;
     background-color: #0A0D12;
     color: white;
     overflow-x: hidden;
-    font-size: 1.1rem;
+
+    font-family: "play";
+    font-size: 1.6rem;
+
+    /* font-family: "michroma";
+    font-size: 1.25rem; */
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    /* font-size: 2rem; */
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    /* font-size: 1.5rem; */
+
 }
 
 header img {
@@ -121,12 +129,12 @@ header img {
 }
 
 .gradient-bar {
-    bottom: -10rem;
+    bottom: -8rem;
+    /* bottom: -10rem; */
     z-index: 10;
     width: 30rem;
     height: 0.5rem;
     border-radius: 100rem;
-    /* filter: blur(0.06rem); */
     background: rgb(121, 60, 226);
     background: linear-gradient(90deg, rgba(121, 60, 226, 1) 0%, rgba(33, 196, 241, 1) 100%);
 }
@@ -142,7 +150,8 @@ header img {
 
 .all-text-wrapper h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    /* font-size: 2rem; */
     margin: 0 0 1rem 0;
 }
 
@@ -159,6 +168,15 @@ header img {
     margin-top: 0;
     padding: 1.3rem 0;
     border-bottom: #E0E0E0 0.1rem solid;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 1000;
 }
 
 .right-text {
@@ -166,10 +184,6 @@ header img {
     flex-direction: column;
     align-items: flex-end;
     /* text-align: right; */
-}
-
-.anim-text {
-    color: rgba(255, 255, 255, 0.9);
 }
 
 /* .progress-bar {
@@ -195,6 +209,17 @@ header img {
     filter: blur(0.06rem);
 
 } */
+.white-space {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.book-img {
+
+    width: 20rem;
+    border-radius: 0.6rem;
+}
 
 #circle-1 {
     z-index: 0;

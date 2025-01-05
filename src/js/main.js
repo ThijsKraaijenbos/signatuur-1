@@ -152,7 +152,7 @@ const init = () => {
                     // @ts-ignore
                     endTrigger: element.parentElement?.parentElement.querySelector('.anim-text'),
                     once: true,
-                    // markers: true,
+                    markers: true,
                 }
             }
         );
@@ -207,4 +207,25 @@ const init = () => {
             }
         );
     }
+
+    //Animate images
+    gsap.fromTo('.book-img', {
+        y: -10,
+        opacity: 0,
+    },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 3,
+            ease: "power3.inOut",
+            scrollTrigger: {
+                trigger: ".book-img",
+                start: "20% bottom",
+                end: "20% center",
+                scrub: 3,
+                once: true,
+                markers: true,
+            }
+        }
+    );
 }
