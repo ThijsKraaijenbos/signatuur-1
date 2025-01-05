@@ -228,4 +228,21 @@ const init = () => {
             }
         }
     );
+    gsap.fromTo('#circle-3', {
+        opacity: 0,
+    },
+        {
+            opacity: 1,
+            duration: 3,
+            ease: "power3.inOut",
+            scrollTrigger: {
+                trigger: "#circle-3",
+                start: "20% bottom",
+                end: "20% center",
+                scrub: 3,
+                once: true,
+                // markers: true,
+            }
+        }
+    );
 }
