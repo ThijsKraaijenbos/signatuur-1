@@ -32,7 +32,7 @@ const init = () => {
 
     gsap.fromTo(".right img", {
         opacity: 0,
-        y: -40,
+        y: -20,
     },
         {
             y: 0,
@@ -216,12 +216,12 @@ const init = () => {
         {
             y: 0,
             opacity: 1,
-            duration: 3,
+            duration: 5,
             ease: "power3.inOut",
             scrollTrigger: {
                 trigger: ".book-img",
                 start: "20% bottom",
-                end: "20% center",
+                end: "center center",
                 scrub: 3,
                 once: true,
                 // markers: true,
@@ -233,12 +233,12 @@ const init = () => {
     },
         {
             opacity: 1,
-            duration: 3,
+            duration: 5,
             ease: "power3.inOut",
             scrollTrigger: {
                 trigger: "#circle-3",
                 start: "20% bottom",
-                end: "20% center",
+                end: "40% center",
                 scrub: 3,
                 once: true,
                 // markers: true,
